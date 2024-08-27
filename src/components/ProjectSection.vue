@@ -7,7 +7,7 @@
       <div v-for="project in projects" :key="project.id" class="group drop-shadow-lg">
         <div class="overflow-hidden relative rounded-t-lg">
           <img
-            :src="project.projectImageLink"
+            src="@/assets/img/project_1.jpg"
             class="h-full w-full group-hover:scale-125 object-cener object-cover duration-500"
             alt="project image"
           />
