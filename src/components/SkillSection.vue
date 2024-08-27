@@ -3,7 +3,7 @@
     <!-- section title -->
     <SectionTitle section-heading="expertise" />
     <div
-      class="w-fit mx-auto grid grid-cols-1 xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 justify-items-center justify-center gap-y-12 gap-x-14 py-16"
+      class="w-fit mx-auto grid grid-cols-1 lg:grid-cols-3 sm:grid-cols-2 justify-items-center justify-center gap-y-12 gap-x-14 py-16"
     >
       <!-- skill card -->
       <SkillCard v-for="(skill, index) in skills" :key="index">
