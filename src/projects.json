@@ -1,0 +1,10 @@
+[
+  {
+    "id": 1,
+    "projectType": "web app",
+    "projectTitle": "FarmTrack",
+    "projectDescription": "A simple application to track farm records or farm operations.",
+    "projectLink": "https://github.com/Robrizo/farmtrack",
+    "projectImageLink": "src/assets/img/project_1.jpg"
+  }
+]
