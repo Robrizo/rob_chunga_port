@@ -4,7 +4,7 @@
     <SectionTitle section-heading="latest projects" />
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-6 lg:gap-8 my-12">
       <!-- project card -->
-      <div v-for="project in projects" :key="project.id" class="group drop-shadow-lg">
+      <div v-for="(project, index ) in projects" :key="index.id" class="group drop-shadow-lg">
         <div class="overflow-hidden relative rounded-t-lg">
           <img :src="project.projectImageLink"
             class="h-full w-full group-hover:scale-125 object-cener object-cover duration-500" alt="project image" />
@@ -45,7 +45,7 @@ const projects = ref(
     "projectTitle": "FarmTrack",
     "projectDescription": "A simple application to track farm records or farm operations.",
     "projectLink": "https://github.com/Robrizo/farmtrack",
-    "projectImageLink": "/project_1.jpg"
+    "projectImageLink": "./src/assets/img/project_1.jpg"
   },
   {
     "id": 2,
@@ -53,7 +53,7 @@ const projects = ref(
     "projectTitle": "Beauty Bliss",
     "projectDescription": "A simple landing page for an e-commerce store. Build with Vue 3 and Tailwind CSS.",
     "projectLink": "https://beauty-bliss-frontend.vercel.app/",
-    "projectImageLink": "/beautybliss.jpg"
+    "projectImageLink": "./src/assets/img/beautybliss.jpg"
   }]
 )
 
