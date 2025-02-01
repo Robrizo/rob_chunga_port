@@ -6,5 +6,13 @@
     "projectDescription": "A simple application to track farm records or farm operations.",
     "projectLink": "https://github.com/Robrizo/farmtrack",
     "projectImageLink": "@/assets/img/project_1.jpg"
+  },
+  {
+    "id": 1,
+    "projectType": "website",
+    "projectTitle": "Beauty Bliss",
+    "projectDescription": "A simple landing page for an e-commerce store. Build with Vue 3 and Tailwind CSS.",
+    "projectLink": "https://beauty-bliss-frontend.vercel.app/",
+    "projectImageLink": "@/assets/img/beautybliss.jpg"
   }
 ]
