@@ -45,7 +45,7 @@ const projects = ref(
     "projectTitle": "FarmTrack",
     "projectDescription": "A simple application to track farm records or farm operations.",
     "projectLink": "https://github.com/Robrizo/farmtrack",
-    "projectImageLink": "./project_1.jpg"
+    "projectImageLink": "/project_1.jpg"
   },
   {
     "id": 2,
@@ -53,7 +53,7 @@ const projects = ref(
     "projectTitle": "Beauty Bliss",
     "projectDescription": "A simple landing page for an e-commerce store. Build with Vue 3 and Tailwind CSS.",
     "projectLink": "https://beauty-bliss-frontend.vercel.app/",
-    "projectImageLink": "./beautybliss.jpg"
+    "projectImageLink": "/beautybliss.jpg"
   }]
 )
 
