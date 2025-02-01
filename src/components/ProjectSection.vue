@@ -6,11 +6,8 @@
       <!-- project card -->
       <div v-for="project in projects" :key="project.id" class="group drop-shadow-lg">
         <div class="overflow-hidden relative rounded-t-lg">
-          <img
-            :src="project.projectImageLink"
-            class="h-full w-full group-hover:scale-125 object-cener object-cover duration-500"
-            alt="project image"
-          />
+          <img :src="project.projectImageLink"
+            class="h-full w-full group-hover:scale-125 object-cener object-cover duration-500" alt="project image" />
           <div class="bg-shadesOfBlue w-fit px-4 py-1 rounded-l-lg absolute top-0 right-0">
             <p class="capitalize text-gray-100">{{ project.projectType }}</p>
           </div>
@@ -27,12 +24,8 @@
             </p>
           </div>
           <div class="mb-2">
-            <a
-              class="bg-shadesOfBlue text-white capitalize p-2.5 px-4 rounded-lg hover:bg-white hover:ring-2 hover:ring-shadesOfBlue hover:text-shadesOfBlue duration-300"
-              :href="project.projectLink"
-              target="_blank"
-              >view project</a
-            >
+            <a class="bg-shadesOfBlue text-white capitalize p-2.5 px-4 rounded-lg hover:bg-white hover:ring-2 hover:ring-shadesOfBlue hover:text-shadesOfBlue duration-300"
+              :href="project.projectLink" target="_blank">view project</a>
           </div>
         </div>
       </div>
@@ -43,8 +36,25 @@
 <script setup>
 import { ref } from 'vue'
 import SectionTitle from '@/components/SectionTitle.vue'
-import projectData from '@/projects.json'
+// import projectData from '@/projects.json'
 
-const projects = ref(projectData)
+const projects = ref(
+  [{
+    "id": 1,
+    "projectType": "web app",
+    "projectTitle": "FarmTrack",
+    "projectDescription": "A simple application to track farm records or farm operations.",
+    "projectLink": "https://github.com/Robrizo/farmtrack",
+    "projectImageLink": "./project_1.jpg"
+  },
+  {
+    "id": 2,
+    "projectType": "website",
+    "projectTitle": "Beauty Bliss",
+    "projectDescription": "A simple landing page for an e-commerce store. Build with Vue 3 and Tailwind CSS.",
+    "projectLink": "https://beauty-bliss-frontend.vercel.app/",
+    "projectImageLink": "./beautybliss.jpg"
+  }]
+)
 
 </script>
