@@ -1,35 +1,69 @@
-# rob_chunga_port
+# Robert Chunga Portfolio
 
-This template should help get you started developing with Vue 3 in Vite.
+A modern portfolio website built with Vue 3, Vite and Tailwindcss, showcasing my projects, skills, and professional experience.
 
-## Recommended IDE Setup
+## 🌐 Live Preview
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+Visit the live website: [https://robert-chunga.vercel.app/](https://robert-chunga.vercel.app/)
 
-## Customize configuration
+## 🚀 Features
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+- Modern and responsive design
+- Built with Vue 3 composition API
+- Lightning-fast development with Vite
+- Optimized for production deployment
+- Clean and professional layout
 
-## Project Setup
+## 🛠️ Technology Stack
 
-```sh
+- **Frontend Framework:** Vue 3
+- **Build Tool:** Vite
+- **Deployment:** Vercel
+- **Styling:** Tailwindcss Version 3
+
+## 📋 Prerequisites
+
+Before you begin, ensure you have the following installed:
+- Node.js (version 16 or higher)
+- npm package manager
+
+## 🔧 Installation & Setup
+
+1. Clone the repository:
+```bash
+git clone https://github.com/Robrizo/rob_chunga_port.git
+cd rob_chunga_port
+```
+
+2. Install dependencies:
+```bash
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+## 🏃‍♂️ Development
 
-```sh
+Start the development server with hot-reload:
+```bash
 npm run dev
 ```
 
-### Compile and Minify for Production
+The application will be available at `http://localhost:3000`
 
-```sh
-npm run build
-```
+## 📝 Recommended IDE Setup
 
-### Lint with [ESLint](https://eslint.org/)
+For the best development experience:
+- **IDE:** [VSCode](https://code.visualstudio.com/)
+- **Extension:** [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+- **Note:** Disable Vetur if you have it installed
 
-```sh
-npm run lint
-```
+## 📄 License
+
+This project is open source and available under the MIT License.
+
+## 🤝 Contributing
+
+Feel free to submit issues and feature requests!
+
+## 📧 Contact
+
+For any inquiries about this portfolio, please reach out through the contact form on the website.
