@@ -7,7 +7,7 @@ import SectionTitle from './SectionTitle.vue'
     <!-- section title -->
     <SectionTitle section-heading="get in touch" />
     <div class="my-12 lg:px-24 flex items-center justify-center">
-      <div class="md:w-max-2xl">
+      <div class="w-full md:w-max-2xl">
         <form action="https://formspree.io/f/mknlkvvj" method="POST">
           <div class="grid sm:grid-cols-3 gap-4">
             <div>
