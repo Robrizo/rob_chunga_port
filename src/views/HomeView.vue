@@ -1,11 +1,11 @@
 <template>
-  <NavbarSection id="home-section">
+  <NavbarSection>
     <MainSection />
   </NavbarSection>
-  <AboutSection id="about-section" />
-  <SkillSection id="skill-section" />
-  <ProjectSection id="projects-section" />
-  <ContactSection id="contact-section" />
+  <AboutSection />
+  <SkillSection />
+  <ProjectSection />
+  <ContactSection />
   <FooterSection />
   <ToTopButton />
 </template>

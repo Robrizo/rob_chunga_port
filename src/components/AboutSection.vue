@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-screen mx-auto lg:py-8 py-4 lg:px-36 px-20 dark:bg-gray-800">
+  <div id="about" class="max-w-screen mx-auto lg:py-8 py-4 lg:px-36 px-20 dark:bg-gray-800">
     <!-- section title -->
     <SectionTitle />
     <div

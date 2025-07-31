@@ -117,9 +117,9 @@
 
 <script setup>
 defineProps({
-    pos: {
-        type: String,
-        default: 'flex items-center justify-center'
-    }
+  pos: {
+    type: String,
+    default: 'flex items-center justify-center'
+  }
 })
 </script>

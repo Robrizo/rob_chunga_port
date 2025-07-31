@@ -3,13 +3,13 @@ import SectionTitle from './SectionTitle.vue'
 </script>
 
 <template>
-  <div class="max-w-screen mx-auto lg:py-8 py-4 lg:px-36 px-20 dark:bg-gray-800">
+  <div id="contact" class="max-w-screen mx-auto lg:py-8 py-4 px-20 dark:bg-gray-800">
     <!-- section title -->
     <SectionTitle section-heading="get in touch" />
     <div class="my-12 lg:px-24 flex items-center justify-center">
-      <div class="w-full">
+      <div class="w-full lg:max-w-4xl">
         <form action="https://formspree.io/f/mknlkvvj" method="POST">
-          <div class="grid sm:grid-cols-3 gap-4">
+          <div class="grid md:grid-cols-3 gap-4">
             <div>
               <label class="capitalize text-lg dark:text-mainGray" for="name">name</label>
               <input
@@ -40,7 +40,7 @@ import SectionTitle from './SectionTitle.vue'
                 required
               />
             </div>
-            <div class="sm:col-span-3">
+            <div class="md:col-span-3">
               <label class="capitalize text-lg dark:text-mainGray" for="msg">message</label>
               <textarea
                 rows="4"

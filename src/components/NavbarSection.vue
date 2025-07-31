@@ -170,11 +170,11 @@ const openNavBar = () => {
 }
 
 const navItems = ref([
-  { name: 'home', icon: 'bx bx-home', link: '#home-section' },
-  { name: 'about', icon: 'bx bx-user', link: '#about-section' },
-  { name: 'expertise', icon: 'bx bx-category', link: '#skill-section' },
-  { name: 'projects', icon: 'bx bx-layer', link: '#projects-section' },
-  { name: 'contact', icon: 'bx bx-phone', link: '#contact-section' }
+  { name: 'home', icon: 'bx bx-home', link: '#home' },
+  { name: 'about', icon: 'bx bx-user', link: '#about' },
+  { name: 'expertise', icon: 'bx bx-category', link: '#skill' },
+  { name: 'projects', icon: 'bx bx-layer', link: '#project' },
+  { name: 'contact', icon: 'bx bx-phone', link: '#contact' }
 ])
 
 const closeNavBar = (event) => {
@@ -183,46 +183,10 @@ const closeNavBar = (event) => {
   }
 }
 
-const updateTitle = (sectionId) => {
-  let title = 'Robert Chunga'
-  if (sectionId === 'about-section') {
-    title = 'Robert Chunga - About'
-  } else if (sectionId === 'skill-section') {
-    title = 'Robert Chunga - Expertise'
-  } else if (sectionId === 'projects-section') {
-    title = 'Robert Chunga - Projects'
-  } else if (sectionId === 'contact-section') {
-    title = 'Robert Chunga - Contact'
-  }
-  document.title = title
-}
-
-const observeSections = () => {
-  const sections = document.querySelectorAll('div[id]')
-  const options = {
-    root: null,
-    rootMargin: '0px',
-    threshold: 0.5
-  }
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        const sectionId = entry.target.id
-        updateTitle(sectionId)
-      }
-    })
-  }, options)
-
-  sections.forEach((section) => {
-    observer.observe(section)
-  })
-}
-
 const navbar = ref(null)
 
 onMounted(() => {
-  document.addEventListener('click', closeNavBar), observeSections()
+  document.addEventListener('click', closeNavBar)
 })
 
 onBeforeUnmount(() => {

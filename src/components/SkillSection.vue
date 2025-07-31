@@ -1,9 +1,12 @@
 <template>
-  <div class="max-w-screen mx-auto lg:py-8 py-4 lg:px-36 px-20 bg-gray-100 dark:bg-gray-700">
+  <div
+    id="skill"
+    class="max-w-screen mx-auto lg:py-8 py-4 lg:px-36 px-20 bg-gray-100 dark:bg-gray-700"
+  >
     <!-- section title -->
     <SectionTitle section-heading="expertise" />
     <div
-      class="w-fit mx-auto grid grid-cols-1 lg:grid-cols-3 sm:grid-cols-2 justify-items-center justify-center gap-y-12 gap-x-14 py-16"
+      class="w-full mx-auto grid grid-cols-1 lg:grid-cols-3 sm:grid-cols-2 justify-items-center justify-center gap-y-12 gap-x-14 py-16"
     >
       <!-- skill card -->
       <SkillCard v-for="(skill, index) in skills" :key="index">
@@ -33,7 +36,7 @@
         <div class="flex flex-col items-center justify-center absolute mx-auto inset-0 p-4">
           <div>
             <h2
-              class="text-lg md:text-xl capitalize font-bold text-shadesOfBlue my-4 md:my-8 dark:text-gray-100"
+              class="text-lg text-center md:text-xl capitalize font-bold text-shadesOfBlue my-4 md:my-8 dark:text-gray-100"
             >
               {{ skill.title }}
             </h2>
@@ -45,26 +48,24 @@
 </template>
 
 <script setup>
-import SectionTitle from './SectionTitle.vue';
+import SectionTitle from './SectionTitle.vue'
 import SkillCard from './SkillCard.vue'
-
 
 const skills = [
   {
-    title: 'web design',
-    svgPath: 'M9 16H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v1M9 12H4m8 8V9h8v11h-8Zm0 0H9m8-4a1 1 0 1 0-2 0 1 1 0 0 0 2 0Z',
+    title: 'web design & Development',
+    svgPath:
+      'M9 16H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v1M9 12H4m8 8V9h8v11h-8Zm0 0H9m8-4a1 1 0 1 0-2 0 1 1 0 0 0 2 0Z'
   },
   {
     title: 'graphic design',
-    svgPath: 'M11 18h2M5.875 3h12.25c.483 0 .875.448.875 1v16c0 .552-.392 1-.875 1H5.875C5.392 21 5 20.552 5 20V4c0-.552.392-1 .875-1Z',
+    svgPath:
+      'M11 18h2M5.875 3h12.25c.483 0 .875.448.875 1v16c0 .552-.392 1-.875 1H5.875C5.392 21 5 20.552 5 20V4c0-.552.392-1 .875-1Z'
   },
   {
     title: 'UI/UX design',
-    svgPath: 'M10.779 17.779 4.36 19.918 6.5 13.5m4.279 4.279 8.364-8.643a3.027 3.027 0 0 0-2.14-5.165 3.03 3.03 0 0 0-2.14.886L6.5 13.5m4.279 4.279L6.499 13.5m2.14 2.14 6.213-6.504M12.75 7.04 17 11.28',
-  },
-  {
-    title: 'web development',
-    svgPath: 'M12 15v5m-3 0h6M4 11h16M5 15h14a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1Z',
-  },
+    svgPath:
+      'M10.779 17.779 4.36 19.918 6.5 13.5m4.279 4.279 8.364-8.643a3.027 3.027 0 0 0-2.14-5.165 3.03 3.03 0 0 0-2.14.886L6.5 13.5m4.279 4.279L6.499 13.5m2.14 2.14 6.213-6.504M12.75 7.04 17 11.28'
+  }
 ]
 </script>
